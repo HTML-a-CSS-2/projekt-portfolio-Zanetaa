@@ -8,18 +8,31 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  font-family: 'Merriweather', serif;
   font-size: 16px;
   line-height: 1.6;
+}
+
+.prvni-blok--modifikator,
+.treti-blok--modifikator,
+.paty-blok--modifikator {
+  font-family: 'Merriweather', serif;
 }
 
 .druhy-blok,
 .ctvrty-blok {
   margin: 0;
   padding: 0;
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
   font-size: 16px;
   line-height: 1.6;
+}
+
+.druhy-blok--modifikator {
+  font-family: 'Merriweather', serif;
+}
+
+.ctvrty-blok--modifkator {
+  font-family: 'Merriweather', serif;
 }
 
 .druhy-blok__nadpis,
@@ -112,5 +125,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightpink;
 }
 /*# sourceMappingURL=styles.css.map */
