@@ -94,14 +94,19 @@ color:violet
 .druhy-blok__kontejner {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+justify-items: center;
 /*grid-template-rows: 1fr 500px;*/
 }
 
 .treti-blok__kontejner {
 display: grid;
 grid-template-columns: repeat(4, minmax(20px, 1fr));
+align-items: center;
+justify-items: center;
 /*grid-template-rows: 1fr 500px;*/
 }
+
 
 .ctvrty-blok__kontejner {
 display: grid;
