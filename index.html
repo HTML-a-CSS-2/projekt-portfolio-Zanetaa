@@ -35,8 +35,8 @@ dosáhněte responzivního vzhledu vaší stránky buď pomocí css gridu nebo m
 # Čtvrtá stage domácího úkolu
 přidejte do Vaší stránky alespoň 3 svg obrázky
 využijte alespoň ve 2 případech responzivní obrázky
-jednou srcset
-jednou picture
+    jednou srcset
+    jednou picture
 
 
 -->
@@ -44,6 +44,15 @@ jednou picture
 <header class="prvni-blok">
 
     <h1 class="prvni-blok__nadpis"> Mendy</h1>
+
+    <section class="prvni-blok__element-dva">
+    <img src="SRCSET obrázky/medium.jpg" alt="image" srcset="
+    SRCSET obrázky/small.jpg 500w,
+    SRCSET obrázky/medium.jpg 1000w,
+    SRCSET obrázky/Big.jpg 1500w
+    "
+    /> </section>
+    </section>
     
     <p class="prvni-blok__element-jedna"> Ahoj, jmenuji se Mendy a jsem fenka francouzského buldočka. </p>
     
@@ -109,13 +118,13 @@ jednou picture
     <section class="ctvrty-blok__element-jedna">
 
     <section class="ctvrty-blok__element-dva">
-    <img src="Mendy/Mendy1.JPG" alt="Mendy1"> </section>
+    <img src="Mendy/Mendy1.JPG" srcset="" width="500" height="500" alt="Mendy1"> </section>
 
     <section class="ctvrty-blok__element-tri">
-    <img src="Mendy/Mendy2.JPG" alt="Mendy2"> </section>
+    <img src="Mendy/Mendy2.JPG" width="500" height="500" alt="Mendy2"> </section>
 
     <section class="ctvrty-blok__element-ctyri">
-    <img src="Mendy/Mendy3.JPG" alt="Mendy3"> </section>
+    <img src="Mendy/Mendy3.JPG" width="500" height="500" alt="Mendy3"> </section>
     </section>
 
     </div>
@@ -130,12 +139,11 @@ jednou picture
     <p class="paty-blok__element-jedna"> 
         
     Nejdete nás na: <br>
-    <img class="instagram" src="SVG/5296765_camera_instagram_instagram logo_icon.svg" alt="Instagram" /> Instagramu: <a href="https://www.instagram.com"> Instagram </a> <br>
-   
+    <img class="instagram" src="SVG/5296765_camera_instagram_instagram logo_icon.svg" width="35" height="35" alt="Instagram" /> Instagramu: <a href="https://www.instagram.com"> Instagram </a> <br>
         
-    <img class="facebook" src="SVG/317727_facebook_social media_social_icon.svg" alt="Facebook"/> Facebooku: <a href="https://www.facebook.com"> Facebook </a> <br>
+    <img class="facebook" src="SVG/317727_facebook_social media_social_icon.svg" width="35" height="35" alt="Facebook"/> Facebooku: <a href="https://www.facebook.com"> Facebook </a> <br>
 
-    <img class="email" src="SVG/4202011_email_gmail_mail_logo_social_icon.svg" alt="Instagram"/> Emailu: <a href="mailto: "> Email </a> <br>
+    <img class="email" src="SVG/4202011_email_gmail_mail_logo_social_icon.svg" width="35" height="35" alt="Instagram"/> Emailu: <a href="mailto: "> Email </a> <br>
     </p>
     
     </footer>
