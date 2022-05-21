@@ -137,3 +137,11 @@ a {
 @mixin grid-template-columns() {
     grid-template-columns: repeat(3, 1fr);;
 }
+
+
+.facebook,
+.instagram,
+.email {
+	height:35px;
+	width:35px;
+}
