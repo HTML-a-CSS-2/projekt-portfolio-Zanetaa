@@ -87,3 +87,31 @@ color:violet
 /*.ctvrty-blok__element-jedna {
     display:flex;
 }*/
+.body {
+    display:grid;
+}
+
+.druhy-blok__kontejner {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+justify-items: center;
+/*grid-template-rows: 1fr 500px;*/
+}
+
+.treti-blok__kontejner {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+align-items: center;
+justify-items: center;
+/*grid-template-rows: 1fr 500px;*/
+}
+
+
+.ctvrty-blok__kontejner {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+display: flex;
+}
+
+
