@@ -32,12 +32,27 @@ dosáhněte responzivního vzhledu vaší stránky buď pomocí css gridu nebo m
 6. použijte alespoň jednou mixins jinak než pro css grid 
 7. do gitu pushněte jak vaše css, tak nový sass soubor
 
+# Čtvrtá stage domácího úkolu
+přidejte do Vaší stránky alespoň 3 svg obrázky
+využijte alespoň ve 2 případech responzivní obrázky
+    jednou srcset
+    jednou picture
 
 -->
 
 <header class="prvni-blok">
 
     <h1 class="prvni-blok__nadpis"> Mendy</h1>
+
+    <section class="prvni-blok__element-dva">
+    <img src="Source/" alt="image" srcset="
+    Source/small.jpg 500w,
+    Source/medium.jpg 1000w,
+    Source/Big.jpg 1500w
+    "
+    /> 
+    </section>
+    </section>
     
     <p class="prvni-blok__element-jedna"> Ahoj, jmenuji se Mendy a jsem fenka francouzského buldočka. </p>
     
@@ -47,7 +62,6 @@ dosáhněte responzivního vzhledu vaší stránky buď pomocí css gridu nebo m
     <div class="druhy-blok">
     
     <h2 class="druhy-blok__nadpis"> Seznamte se s Mendy </h2>
-
     
     <p class="druhy-blok__element-jedna"> Mendy je fenka francouzského buldočka. Narodila se 22.2.2018 na Slovensku. Od 6.6.2020 již ovšem bydlí v České republice. </p>
 
@@ -103,13 +117,13 @@ dosáhněte responzivního vzhledu vaší stránky buď pomocí css gridu nebo m
     <section class="ctvrty-blok__element-jedna">
 
     <section class="ctvrty-blok__element-dva">
-    <img src="Mendy/Mendy1.JPG" alt="Mendy1"> </section>
+    <img src="Mendy/Mendy1.JPG" srcset="" width="500" height="500" alt="Mendy1"> </section>
 
     <section class="ctvrty-blok__element-tri">
-    <img src="Mendy/Mendy2.JPG" alt="Mendy2"> </section>
+    <img src="Mendy/Mendy2.JPG" width="500" height="500" alt="Mendy2"> </section>
 
     <section class="ctvrty-blok__element-ctyri">
-    <img src="Mendy/Mendy3.JPG" alt="Mendy3"> </section>
+    <img src="Mendy/Mendy3.JPG" width="500" height="500" alt="Mendy3"> </section>
     </section>
 
     </div>
@@ -120,11 +134,31 @@ dosáhněte responzivního vzhledu vaší stránky buď pomocí css gridu nebo m
     <footer class="paty-blok">
     
     <h2 class="paty-blok__nadpis"> Kontakt </h2>
+
+    <picture class="paty-blok__element-dva">
+        <source 
+        srcset="Source/small.jpg"
+        media= "(max-width: 500px)" 
+        />
+
+        <source 
+        srcset="Source/Big.jpg"
+        media= "(min-width: 1000px)" 
+        />
+     
+        <img src="Source/medium.jpg" />
+
+    </picture>
     
-    <p class="paty-blok__element-jedna"> Nejdete nás na instagramu! </p>
+    <p class="paty-blok__element-jedna"> 
+        
+    Nejdete nás na: <br>
+    <img class="instagram" src="SVG/5296765_camera_instagram_instagram logo_icon.svg" width="35" height="35" alt="Instagram" /> Instagramu: <a href="https://www.instagram.com"> Instagram </a> <br>
+        
+    <img class="facebook" src="SVG/317727_facebook_social media_social_icon.svg" width="35" height="35" alt="Facebook"/> Facebooku: <a href="https://www.facebook.com"> Facebook </a> <br>
 
-    <a href="https://www.instagram.com"> Instagram </a>
-
+    <img class="email" src="SVG/4202011_email_gmail_mail_logo_social_icon.svg" width="35" height="35" alt="Instagram"/> Emailu: <a href="mailto: "> Email </a> <br>
+    </p>
     
     </footer>
     
