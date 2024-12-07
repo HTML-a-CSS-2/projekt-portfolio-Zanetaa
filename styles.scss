@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    padding:0;
+}
+
+$secondColor:darkgoldenrod;
+$thirdColor: forestgreen;
+$fourthColor: steelblue;
+$fifthColor: purple;
+$sixthColor: violet;
+
+$mainBackgrounColor: #f5f5f5;
+
+$mainSize: 16px;
+$secondarySize: 20px;
+
+$italicStyle: italic;
+
+body {
+    $mainColor: black;
+    color: $mainColor;
+}
+
+
+.prvni-blok,
+.treti-blok,
+.paty-blok {
+    margin: 0;
+    padding: 0;
+    background-color: $mainBackgrounColor;
+    &--modifikator {font-family: 'Merriweather', serif};
+    font-size: $mainSize;
+    line-height: 1.6;
+}
+
+.druhy-blok,
+.ctvrty-blok {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Merriweather', serif;*/
+    font-size: $mainSize;
+    line-height: 1.6;
+}
+
+.druhy-blok--modifikator {font-family: 'Merriweather', serif};
+
+.ctvrty-blok--modifkator {font-family: 'Merriweather', serif};
+
+.druhy-blok__nadpis,
+.ctvrty-blok__nadpis,
+.treti-blok__nadpis,
+.paty-blok__nadpis {
+    color: $secondColor;
+}
+
+.prvni-blok__nadpis {
+    color:darkolivegreen;
+}
+
+.prvni-blok__element-jedna {
+    font-size: $secondarySize;
+}
+
+.treti-blok__element-jedna--kurziva {
+    font-style: $italicStyle;
+}
+
+.treti-blok__nadpis--zeleny,
+.druhy-blok__nadpis--zeleny {
+color: $thirdColor;
+}
+
+.treti-blok__nadpis--modry,
+.druhy-blok__nadpis--modry {
+color: $fourthColor;
+
+}
+
+.treti-blok__nadpis--fialovy,
+.druhy-blok__nadpis--fialovy {
+color: $fifthColor;
+}
+
+.treti-blok__nadpis--ruzovy,
+.druhy-blok__nadpis--ruzovy {
+color:$sixthColor;
+}
+
+.druhy-blok__element-jedna--kurziva {
+font-style: $italicStyle;
+}
+
+
+.ctvrty-blok__element-dva,
+.ctvrty-blok__element-tri,
+.ctvrty-blok__element-ctyri {
+width:100%;
+height: auto;
+}
+
+/*.ctvrty-blok__element-jedna {
+    display:flex;
+}*/
+
+.body {
+    display:grid;
+}
+
+.druhy-blok__kontejner {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+justify-items: center;
+/*grid-template-rows: 1fr 500px;*/
+}
+
+.treti-blok__kontejner {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+align-items: center;
+justify-items: center;
+/*grid-template-rows: 1fr 500px;*/
+}
+
+
+.ctvrty-blok__kontejner {
+display: grid;
+/*grid-template-columns: repeat(3, 1fr);*/
+@include grid-template-columns();
+@include flex();
+}
+
+a {
+    text-decoration: none;
+    &:hover {color:lightpink}
+}
+
+@mixin flex() {
+    display:flex;
+}
+
+@mixin grid-template-columns() {
+    grid-template-columns: repeat(2, 1fr);;
+}
+
+.prvni-blok__element-dva,
+.paty-blok__element-dva {
+    width:100%;
+    height: auto;
+}

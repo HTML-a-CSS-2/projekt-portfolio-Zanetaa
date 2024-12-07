@@ -1,0 +1,117 @@
+
+.prvni-blok,
+.treti-blok,
+.paty-blok {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.druhy-blok,
+.ctvrty-blok {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.druhy-blok__nadpis,
+.ctvrty-blok__nadpis,
+.treti-blok__nadpis,
+.paty-blok__nadpis {
+    color:darkgoldenrod;
+}
+
+.prvni-blok__nadpis {
+    color:darkolivegreen;
+}
+
+.prvni-blok__element-jedna {
+    font-size: 20px;
+}
+
+.treti-blok__element-jedna--kurziva {
+    font-style:italic ;
+}
+
+.treti-blok__nadpis--zeleny {
+color:forestgreen
+}
+
+.treti-blok__nadpis--modry {
+color:steelblue
+
+}
+
+.treti-blok__nadpis--fialovy {
+color:purple
+}
+
+.treti-blok__nadpis--ruzovy {
+color:violet
+}
+
+.druhy-blok__element-jedna--kurziva {
+    font-style:italic ;
+}
+
+.druhy-blok__nadpis--zeleny {
+    color:forestgreen
+    }
+    
+.druhy-blok__nadpis--modry {
+    color:steelblue
+    
+}
+
+.druhy-blok__nadpis--fialovy {
+    color:purple
+}
+    
+.druhy-blok__nadpis--ruzovy {
+    color:violet
+}
+
+
+.ctvrty-blok__element-dva,
+.ctvrty-blok__element-tri,
+.ctvrty-blok__element-ctyri {
+       max-width:100%;
+       height: auto;
+}
+
+/*.ctvrty-blok__element-jedna {
+    display:flex;
+}*/
+.body {
+    display:grid;
+}
+
+.druhy-blok__kontejner {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+justify-items: center;
+/*grid-template-rows: 1fr 500px;*/
+}
+
+.treti-blok__kontejner {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+align-items: center;
+justify-items: center;
+/*grid-template-rows: 1fr 500px;*/
+}
+
+
+.ctvrty-blok__kontejner {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+display: flex;
+}
+
+
